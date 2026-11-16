@@ -1,0 +1,20 @@
+{
+  "name": "adaptive-science-quiz",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "node scripts/validate-questions.mjs public/questions.json",
+    "check": "tsc --noEmit && vitest run && node scripts/validate-questions.mjs public/questions.json"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
